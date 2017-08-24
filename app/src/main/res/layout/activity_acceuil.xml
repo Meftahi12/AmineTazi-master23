@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:weightSum="10"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.navigation.drawer.activity.Activity.Acceuil"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="3"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+            <Button
+                android:onClick="findGirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="how to find girls"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+            <Button
+                android:onClick="getCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="how to get coins"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+            <Button
+                android:onClick="share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="share"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
