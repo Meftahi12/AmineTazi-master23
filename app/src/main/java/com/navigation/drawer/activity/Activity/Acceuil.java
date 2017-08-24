@@ -24,11 +24,11 @@ public class Acceuil extends BaseActivity {
 
     public void getCoins(View view) {
         GetCoin.id = 0;
-        startActivity(new Intent(this,GetCoin.class));
+        openActivity(2);
     }
 
     public void findGirl(View view) {
-        GetCoin.id = 0;
-        startActivity(new Intent(this,GetCoin.class));
+        findGirls.id = 0;
+        openActivity(1);
     }
 }

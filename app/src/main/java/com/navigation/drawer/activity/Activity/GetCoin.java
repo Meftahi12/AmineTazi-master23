@@ -46,13 +46,53 @@ public class GetCoin extends BaseActivity {
     }
 
     public void prevCoin(View view) {
-        id --;
-        startActivity(new Intent(this,GetCoin.class));
+        id--;
+        ImageView iv = (ImageView) findViewById(R.id.coinImg);
+        int resId = getResources().getIdentifier("coin" + id, "drawable", getPackageName());
+        iv.setImageResource(resId);
+        TextView tv = (TextView) findViewById(R.id.coinTxt);
+        tv.setText(arr.get(id));
+        if(id == 0){
+            Button b = (Button) findViewById(R.id.prevCoin);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.prevCoin);
+            b.setVisibility(View.VISIBLE);
+        }
+        if(id == arr.size() - 1){
+            Button b = (Button) findViewById(R.id.nextCoin);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.nextCoin);
+            b.setVisibility(View.VISIBLE);
+        }
     }
 
     public void nextCoin(View view) {
         id ++;
-        startActivity(new Intent(this,GetCoin.class));
+        ImageView iv = (ImageView) findViewById(R.id.coinImg);
+        int resId = getResources().getIdentifier("coin" + id, "drawable", getPackageName());
+        iv.setImageResource(resId);
+        TextView tv = (TextView) findViewById(R.id.coinTxt);
+        tv.setText(arr.get(id));
+        if(id == 0){
+            Button b = (Button) findViewById(R.id.prevCoin);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.prevCoin);
+            b.setVisibility(View.VISIBLE);
+        }
+        if(id == arr.size() - 1){
+            Button b = (Button) findViewById(R.id.nextCoin);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.nextCoin);
+            b.setVisibility(View.VISIBLE);
+        }
     }
 
 }

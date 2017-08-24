@@ -24,8 +24,7 @@ import com.navigation.drawer.activity.R;
 
 
 public class BaseActivity extends Activity {
-	ProgressDialog pDialog;
-	public boolean loginVerifed = false;
+
 
 
 	public static int iconId = R.drawable.ic_launcher;
@@ -36,19 +35,7 @@ public class BaseActivity extends Activity {
 	protected ListView mDrawerList;
 
 
-	/*
 
-	TALITAN
-
-
-	MRE7BA B SI AMINE .. TCHREB SHI HAJA ??
-
-
-	Daba Apres matcreer L'activity .. Ajouter f had listArray li l te7t .. smia b trtib li bghitiha tban fih
-
-
-
-	 */
 
 
 

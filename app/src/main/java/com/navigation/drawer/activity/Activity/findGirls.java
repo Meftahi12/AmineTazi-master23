@@ -41,11 +41,51 @@ public class findGirls extends BaseActivity {
 
     public void prevGirl(View view) {
         id --;
-        startActivity(new Intent(this,findGirls.class));
+        ImageView iv = (ImageView) findViewById(R.id.girlImg);
+        int resId = getResources().getIdentifier("girl" + id , "drawable", getPackageName());
+        iv.setImageResource(resId);
+        TextView tv = (TextView) findViewById(R.id.girltxt);
+        tv.setText(arr.get(id));
+        if(id == 0){
+            Button b = (Button) findViewById(R.id.prevGirl);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.prevGirl);
+            b.setVisibility(View.VISIBLE);
+        }
+        if(id == arr.size() - 1){
+            Button b = (Button) findViewById(R.id.nextGirl);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.nextGirl);
+            b.setVisibility(View.VISIBLE);
+        }
     }
 
     public void nextGirl(View view) {
         id ++;
-        startActivity(new Intent(this,findGirls.class));
+        ImageView iv = (ImageView) findViewById(R.id.girlImg);
+        int resId = getResources().getIdentifier("girl" + id , "drawable", getPackageName());
+        iv.setImageResource(resId);
+        TextView tv = (TextView) findViewById(R.id.girltxt);
+        tv.setText(arr.get(id));
+        if(id == 0){
+            Button b = (Button) findViewById(R.id.prevGirl);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.prevGirl);
+            b.setVisibility(View.VISIBLE);
+        }
+        if(id == arr.size() - 1){
+            Button b = (Button) findViewById(R.id.nextGirl);
+            b.setVisibility(View.INVISIBLE);
+        }
+        else{
+            Button b = (Button) findViewById(R.id.nextGirl);
+            b.setVisibility(View.VISIBLE);
+        }
     }
 }
